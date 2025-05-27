@@ -5,7 +5,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { Interaction } from 'src/interactions/Entities/interaction.entity';
 
 @Module({
-  imports: [TypeOrmModule.forFeature([Interaction])], // Add your entities here if needed
+  imports: [TypeOrmModule.forFeature([Interaction])],
   providers: [ProxyService],
   controllers: [ProxyController],
 })
